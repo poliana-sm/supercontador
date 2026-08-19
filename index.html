@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+</head>
+<body>
+    <div class="caixa">
+
+        <h1>Super Contador</h1>
+
+        <p>Escolha por onde começar e onde terminar:</p>
+
+        <label>Número inicial</label>
+        <br>
+        <input type="number" id="inicio" value="1" placeholder="Número inicial (Ex: 1)">
+
+        <br>
+        <br>
+
+        <label>Número final</label>
+        <br>
+        <input type="number" id="final" value="10" placeholder="Número final (Ex: 10)">
+
+        <br>
+        <br>
+
+        <button type="button" onclick="iniciarContagem()">Contar Agora!</button>
+
+        <br>
+        <br>
+
+        <div id="tela-resultado">Aguardando número...</div>
+
+    </div>
+
+    <script src="js/supercontador.js"></script>
+</body>
+</html>
