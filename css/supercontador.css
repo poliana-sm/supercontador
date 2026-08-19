@@ -1,0 +1,71 @@
+:root{
+	--bg-start: #f7f3ff;
+	--bg-end: #efe6ff;
+	--card-bg: #ffffff;
+	--accent: #8a63d6;
+	--accent-dark: #6b3fb8;
+	--muted: #6b5b7a;
+}
+
+body {
+	font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+	background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
+	margin: 0;
+	padding: 24px;
+	color: var(--muted);
+}
+
+.caixa {
+	max-width: 640px;
+	margin: 48px auto;
+	background: var(--card-bg);
+	padding: 22px;
+	border-radius: 12px;
+	box-shadow: 0 6px 24px rgba(107,63,184,0.12);
+	border: 1px solid rgba(138,99,214,0.12);
+}
+
+h1 {
+	margin: 0 0 8px 0;
+	color: var(--accent-dark);
+	font-size: 1.6rem;
+}
+
+label { color: #5a4870; font-weight: 600; }
+
+input[type="number"]{
+	width: 100%;
+	padding: 8px 10px;
+	margin-top: 6px;
+	border: 1px solid rgba(107,63,184,0.15);
+	border-radius: 6px;
+	background: linear-gradient(180deg,#fff,#fbf7ff);
+	color: #43364f;
+}
+
+button {
+	background: linear-gradient(180deg,var(--accent),var(--accent-dark));
+	color: #fff;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+button:hover{ filter: brightness(0.98); transform: translateY(-1px); }
+
+#tela-resultado {
+	margin-top: 14px;
+	padding: 12px;
+	background: linear-gradient(180deg,#fbf7ff,#f6f1ff);
+	border-radius: 8px;
+	min-height: 48px;
+	color: #3b2d4a;
+	border: 1px solid rgba(107,63,184,0.06);
+}
+
+@media (max-width: 480px){
+	.caixa{ padding: 16px; margin: 20px; }
+	h1{ font-size: 1.2rem }
+}
